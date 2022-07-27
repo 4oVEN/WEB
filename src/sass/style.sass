@@ -1,3 +1,11 @@
+
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: blue  
+
+  
+  
 *
   font-family: 'Roboto', sans-serif
 
@@ -83,6 +91,7 @@ nav
   width: 172px
   height: 46px
   border: none
+  +btn_hover
 
 .promo
   background: url(../img/uber_bg.png) center (center / cover) no-repeat
@@ -179,7 +188,6 @@ nav
 
 .subtitle
   position: relative
-  margin-top: 19px
   font-weight: 400
   font-size: 17px
   color: #222222
@@ -234,6 +242,25 @@ nav
       border-radius: 50%
       margin: 0 auto
       cursor: pointer
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: #1EACC7
+        transition: 0.3s all
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 2px
+        height: 14px
+        background-color: #1EACC7
+        transition: 0.3s all
+      &:hover
+        &:before, &:after
+          background-color: #fff
+
 
 .choice
   position: relative
@@ -259,5 +286,127 @@ nav
     height: 531px
     background: #070716
     z-index: 1
+
+.require
+  padding: 68px 0 51px 0
+  &__block
+    margin: 33px 0
+  &__title
+    font-weight: 400
+    font-size: 22px
+    color: #1CA8C3
+  &__list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 10px
+    li
+      position: relative
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #222222
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        left: -31px
+        top: 50%
+        transform: translateY(-50%)
+        width: 21px
+        height: 20px
+        background: url('../img/check_blue.png') center center / cover no-repeat
+  &__descr
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    color: #1CA8C3
+  .warning
+    .require__title
+      color: #FF5656
+    .require__list
+      li
+        &:before
+          background: url('../img/check_red.png') center center / cover no-repeat
+.world
+  position: relative
+  min-height: 717px
+  background: #080816
+  padding: 48px 0
+  background: url('../img/world_bg.png') center center / cover no-repeat
+  &__link
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 49px
+    font-weight: 400
+    font-size: 15px
+    text-transform: uppercase
+    color: #1FBAD6
+footer
+  padding: 14px 23px 39px 23px
+.footer
+  &__line
+    width: 299px
+    height: 4px
+    background: #1FBAD6
+    margin: 0 auto
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+  &__wrapper > div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+  &__social
+    width: 160px
+    display: flex
+    justify-content: space-between
+    &-item
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 32px
+      height: 32px
+      background: #070716
+      border-radius: 100%
+      margin: 0 4px
+      i
+        color: #fff
+  &__links
+    width: 390px
+    margin: 0 auto
+    &-main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        font-weight: 300
+        font-size: 15px
+        text-transform: uppercase
+        color: #070716
+    &-sub
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        color: #999999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+    &-lang
+      display: block
+      margin: 0 auto
+      color: #1fbad6
+      font-size: 11px
+      font-weight: 400
+      margin-top: 19px
+      text-transform: uppercase
+      text-align: center
+      
+          
+ 
 
       
