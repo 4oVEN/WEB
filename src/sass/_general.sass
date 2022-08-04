@@ -13,6 +13,9 @@ nav
   width: 100%
   z-index: 5
 
+.hamburger
+  display: none
+  
 .menu
   display: flex
   justify-content: space-between
@@ -84,13 +87,14 @@ nav
   border: none
   +btn_hover
 
+
 .promo
   background: url(../img/uber_bg.png) center (center / cover) no-repeat
   padding-top: 100px
 
 .promo__header
   font-weight: 900
-  font-size: 48px
+  font-size: 60px
   text-transform: uppercase
   color: #FFFFFF
   text-align: center
@@ -106,7 +110,7 @@ nav
   margin-top: 22px
 
 .promo__btn
-  margin: 50px auto
+  margin: 100px auto 150px
 
 .promo__descr
   margin-top: 16px
@@ -157,6 +161,8 @@ nav
   align-items: center
   display: flex
   margin-top: 26px
+  flex-wrap: wrap
+  justify-content: center
 
 .benefits__round
   display: flex
@@ -396,4 +402,6 @@ footer
       margin-top: 19px
       text-transform: uppercase
       text-align: center
+.xs-visible
+  display: none
       
