@@ -7,6 +7,11 @@
   .promo
     &__header
       font-size: 50px
+  .mobile
+    &__item
+      width: 290px
+      &__subtitle
+        font-size: 22px
 @media (max-width: 991px)
   .menu
     &__item
@@ -98,8 +103,13 @@
       line-height: 45px
 
 @media (max-width: 575px)
+  nav
+    height: 30px
+  header
+    height: 30px
   .subheader
     height: 60px
+    top: 30px
     &__official
       display: none
     &__logo
@@ -131,6 +141,9 @@
   .menu
     width: 88%
     padding: 5px 3px
+    &__item
+      width: 100%
+      text-align: center
   .benefits
     padding: 20px 0 38px 0
     .title
@@ -151,7 +164,38 @@
       font-size: 14px
     &__item
       width: 100%
+      height: 255px
     &__item-subtitle
       font-size: 18px
+  .choice
+    padding: 24px 0 31px 0
+    min-height: 390px
+    background: black
+    .black
+      display: none
+    .title
+      display: none
+    .subtitle
+      display: none
+    &__img
+      margin: 36px auto 23px
+    &__descr
+      position: relative
+      z-index: 5
+      color: #FFFFFF
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+  .require
+    padding: 20px 0 10px
+    .title
+      font-size: 16px
+      margin-top: 14px
+    &__block
+      margin: 10px 0
+    &__title
+      font-size: 16px
+    li
+      font-size: 14px
 
   
