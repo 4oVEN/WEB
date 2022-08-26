@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+.header{
+  
+  &__official{
+    display: none;
+  }
+  } 
+.promo{
+  min-height: 100%;
+} 
+}
+@media (max-width: 550px){
+.header{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.promo{
+  padding-bottom: 30px;
+  &__wrapper{
+    margin-top: 35px;
+  }
+  &__header{
+    text-align: center;
+    font-size: 36px;
+  }
+  &__subheader{
+    text-align: center;
+    font-size: 20px;
+  }
+  &__icons{
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+.button_main{
+  margin-top: 30px;
+}
+.benefits{
+  padding: 30px 0 30px 0;
+  &__items{
+    margin-top: 30px;
+  }
+}
+}
+@media (max-width: 550px){
+.header{
+  &__contacts{
+    margin-top: 15px;
+  }
+}
+.benefits{
+  &__items{
+    flex-wrap: wrap;
+  }
+  &__item{
+    margin: 10px auto;
+  }
+}
+}
