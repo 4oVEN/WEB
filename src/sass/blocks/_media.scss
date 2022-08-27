@@ -7,6 +7,9 @@
   } 
 .promo{
   min-height: 100%;
+  &__wrapper{
+    margin-top: 35px;
+  }
 } 
 }
 @media (max-width: 550px){
@@ -16,9 +19,7 @@
 }
 .promo{
   padding-bottom: 30px;
-  &__wrapper{
-    margin-top: 35px;
-  }
+
   &__header{
     text-align: center;
     font-size: 36px;
