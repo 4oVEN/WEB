@@ -108,4 +108,19 @@
     font-size: 8px;
   }
 }
+.review{
+  &-item{
+    flex-wrap: wrap;
+    &__img{
+      margin: 0 auto;
+      img{
+        margin-right: 0;
+      }
+    }
+    &__inner{
+      margin-top: 20px;
+    }
+  }
+  
+}
 }
